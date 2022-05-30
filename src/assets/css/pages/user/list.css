@@ -1,0 +1,73 @@
+.clearFix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+}
+
+.header {
+    background: #459DB3;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.cross-btn {
+    float: right;
+}
+
+.left {
+    margin-top: 15px;
+    float: left;
+    width: 25%;
+}
+
+.left img {
+    border-radius: 60%;
+    height: 150px;
+}
+
+.right {
+    margin-top: 15px;
+    float: right;
+    width: 70%;
+}
+
+.right-left,
+.right-left1 {
+    float: left;
+    width: 35%;
+}
+
+.right-right,
+.right-right1 {
+    float: left;
+    width: 65%;
+}
+
+.right-left h2,
+.right-left1 h2 {
+    margin-top: 10px;
+    height: 25px;
+}
+
+.right-right h3,
+.right-right1 h3 {
+    margin-top: 10px;
+    height: 25px;
+}
+
+.right1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.right-left1 {
+    width: 50%;
+}
+
+.right-right1 {
+    width: 50%;
+}

@@ -1,0 +1,24 @@
+.header {
+    font-size: 21px;
+}
+
+.file {
+    padding: 20px 50px;
+}
+
+.btn {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.clear-btn {
+    margin-right: 20px;
+}
+
+.card {
+    border: 1px solid #459DB3;
+}
+
+.cross-btn {
+    float: right;
+}

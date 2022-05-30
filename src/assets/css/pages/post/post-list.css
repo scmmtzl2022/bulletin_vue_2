@@ -1,0 +1,91 @@
+.clearFix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+}
+
+.filter-bar {
+    padding: 0px 10px;
+}
+
+.post-list-btn {
+    margin: auto;
+}
+
+.post-list-btn:hover {
+    text-decoration: none;
+}
+
+.operation-btn {
+    margin: 5px;
+}
+
+.detail-row {
+    height: 30px;
+}
+
+.link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.cross-btn {
+    float: right;
+}
+
+.right {
+    margin-top: 15px;
+    float: right;
+    width: 85%;
+}
+
+.right-left,
+.right-left1 {
+    float: left;
+    width: 35%;
+}
+
+.right-right,
+.right-right1 {
+    float: left;
+    width: 65%;
+}
+
+.right-left h2,
+.right-left1 h2 {
+    margin-top: 10px;
+    height: 25px;
+}
+
+.right-right h3,
+.right-right1 h3 {
+    margin-top: 10px;
+    height: 25px;
+}
+
+.right1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.right-left1 {
+    width: 50%;
+}
+
+.right-right1 {
+    width: 50%;
+}
+
+.header {
+    padding: 10px 0;
+    border: 1px solid #459DB3;
+    padding-left: 2%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: #459DB3;
+    color: #fff;
+    font-size: 25px;
+}

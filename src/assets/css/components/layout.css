@@ -1,0 +1,36 @@
+.route-link {
+    color: white !important;
+    padding: 0px 5px;
+}
+
+.route-links {
+    margin: auto;
+    padding: 0px 5px;
+}
+
+.title {
+    margin: auto;
+}
+
+.title1 {
+    margin-left: 2%;
+    margin-top: 15px;
+    float: left;
+}
+
+.title2 {
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.toolbar {
+    margin: 14px 10px;
+    font-size: 17px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}

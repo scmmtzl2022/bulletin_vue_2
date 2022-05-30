@@ -1,0 +1,46 @@
+.login-title {
+    background: #459DB3;
+    color: #ffffff;
+}
+
+.login-input {
+    height: 70px;
+}
+
+.v-card__actions {
+    display: block;
+}
+
+.login {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+}
+
+.login-error {
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.link {
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 15px;
+    display: block;
+    float: right;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+
+.checkbox {
+    display: block;
+    float: left;
+    margin: 0;
+    padding-left: 0px;
+}
+
+.card {
+    width: 500px;
+}
