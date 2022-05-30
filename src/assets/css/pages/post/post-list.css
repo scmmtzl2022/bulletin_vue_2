@@ -20,7 +20,8 @@
 }
 
 .operation-btn {
-    margin: 5px;
+    margin: 1px;
+    padding: 25px;
 }
 
 .detail-row {

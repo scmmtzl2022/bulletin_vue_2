@@ -12,7 +12,7 @@
 
             <v-toolbar-title class="toolbar">
               <router-link :to="{ name: 'list' }" class="link">
-                Users
+                <span v-if="userType==0" class="title3">Users</span> 
               </router-link>
               <router-link :to="{ name: 'post-list' }" class="link">
                 <span class="title3">Posts</span>
@@ -24,7 +24,7 @@
             <div class="route-links">
               <span v-if="isLoggedIn">
                 <router-link :to="{ name: 'create' }" class="link">
-                  <span class="title2">Create User</span>
+                  <span v-if="userType==0" class="title2">Create User</span>
                 </router-link>
               </span>
 
