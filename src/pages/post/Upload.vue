@@ -22,7 +22,7 @@
           class="file"
         ></v-file-input>
         <div class="btn">
-          <v-btn color="error" class="clear-btn" @click="clear">Clear</v-btn>
+          <v-btn style="background: #F72222; color: white;" class="clear-btn" @click="clear">Clear</v-btn>
           <v-btn
             color="#198754"
             type="submit"

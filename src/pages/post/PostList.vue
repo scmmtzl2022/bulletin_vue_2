@@ -47,13 +47,13 @@
                   heigit="90vh"
                 >
                   <template v-slot:activator="{ on, attrs }">
-                    <a color="primary" v-bind="attrs" v-on="on" class="subtitle">{{
+                    <a color="#459DB3" v-bind="attrs" v-on="on" class="subtitle">{{
                       item.title
                     }}</a>
                   </template>
                   <template v-slot:default="dialog">
                     <v-card>
-                      <v-toolbar color="primary" dark>Post Detail</v-toolbar>
+                      <v-toolbar color="#459DB3" dark>Post Detail</v-toolbar>
                       <v-card-text class="clearFix">
                         <div class="right clearFix">
                           <div class="right-left">
@@ -110,23 +110,23 @@
                   <v-col cols="auto">
                     <v-dialog
                       transition="dialog-bottom-transition"
-                      max-width="600"
+                      max-width="700"
                     >
                       <template v-slot:activator="{ on, attrs }">
                         <v-btn
                           v-bind="attrs"
                           v-on="on"
-                          color="error"
+                          style="background: #F72222; color: white;"
                           class="post-list-btn"
                           >Delete</v-btn
                         >
                       </template>
                       <template v-slot:default="dialog">
                         <v-card>
-                          <v-toolbar color="primary" dark
+                          <v-toolbar color="#459DB3" dark
                             >Delete Confirm</v-toolbar
                           >
-                          <div style="color: red; margin: 20px; font-size:20px">
+                          <div style="color: #459DB3; margin: 20px; font-size:20px">
                             Are you sure to delete Post?
                           </div>
                           <v-card-text class="clearFix">
@@ -134,13 +134,13 @@
                               <div class="right-left1">
                                 <h2>ID</h2>
                                 <h2>Title</h2>
-                                <h2>Description</h2>
+                                <h2>Description</h2><br>
                                 <h2>Status</h2>
                               </div>
                               <div class="right-right1">
                                 <h3>{{ item.id }}</h3>
                                 <h3>{{ item.title }}</h3>
-                                <h3>{{ item.description }}</h3>
+                                <h3>{{ item.description }}</h3><br>
                                 <h3 v-if="item.status === 1">Active</h3>
                                 <h3 v-if="item.status === 0">Deactive</h3>
                               </div>
@@ -156,7 +156,7 @@
                             <v-btn
                               text
                               @click="deletePost(item), (dialog.value = false)"
-                              style="background: #FF6060; color: white;"
+                              style="background: #F72222; color: white;"
                               >Delete</v-btn
                             >
                           </v-card-actions>

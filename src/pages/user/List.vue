@@ -132,7 +132,7 @@
                     </template>
                     <template v-slot:default="dialog">
                       <v-card>
-                        <v-toolbar color="primary" dark>User Detail</v-toolbar>
+                        <v-toolbar color="#459DB3" dark>User Detail</v-toolbar>
                         <v-card-text class="clearFix">
                           <div class="left clearFix">
                             <img :src="image" style="width: 150px" alt="" />
@@ -212,7 +212,7 @@
                           <v-btn
                             v-bind="attrs"
                             v-on="on"
-                            color="error"
+                            style="background: #F72222; color: white;"
                             class="post-list-btn"
                             @click="getImage(item.id)"
                             >Delete</v-btn

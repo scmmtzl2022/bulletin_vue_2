@@ -115,7 +115,7 @@
       </v-card>
 
       <div class="btn">
-        <v-btn color="error" class="mr-4" @click="reset">
+        <v-btn style="background: #F72222; color: white;" class="mr-4" @click="reset">
           Reset
         </v-btn>
         <v-btn

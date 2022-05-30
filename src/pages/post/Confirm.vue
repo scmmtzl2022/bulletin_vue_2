@@ -22,7 +22,7 @@
       </v-card>
 
       <div class="btn">
-        <v-btn color="error" class="mr-4" @click="cancelPost">
+        <v-btn style="background: #F72222; color: white;" class="mr-4" @click="cancelPost">
           Cancel
         </v-btn>
         <v-btn type="submit" color="#198754" class="mr-4" style="color: white">
