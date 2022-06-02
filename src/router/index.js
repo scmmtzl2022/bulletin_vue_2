@@ -13,8 +13,6 @@ import Upload from "../pages/post/Upload";
 import Post_Edit from "../pages/post/Edit";
 import List from "../pages/user/List";
 import ChangePassword from "../pages/user/ChangePassword";
-import ForgetPassword from "../pages/user/Forget";
-import Reset from "../pages/user/Reset";
 import PostList from "../pages/post/PostList";
 import store from "../store";
 
@@ -44,16 +42,6 @@ const routes = [{
         path: "/pwchange",
         name: "pwchange",
         component: ChangePassword,
-    },
-    {
-        path: "/forget",
-        name: "forget",
-        component: ForgetPassword,
-    },
-    {
-        path: `/:token/reset`,
-        name: "reset",
-        component: Reset,
     },
     {
         path: "/confirm",
@@ -113,7 +101,6 @@ router.beforeEach((to, from, next) => {
     const loggedIn = store.getters.isLoggedIn;
     if (!loggedIn &&
         to.name != "post-confirm" &&
-        to.name != "forget" &&
         to.name != "post-confirm" &&
         to.name != "upload" &&
         to.name != "confirm-edit" &&

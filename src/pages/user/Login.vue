@@ -44,9 +44,6 @@
               hide-details
               class="checkbox"
             ></v-checkbox>
-          <router-link :to="{ name: 'forget' }" class="link"
-            >Forgoteen Password?</router-link
-          >
       </v-card-text>
       
       <v-card-actions style="display: 0">
