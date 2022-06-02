@@ -61,7 +61,7 @@
       </v-card>
 
       <div class="btn">
-        <v-btn color="error" class="mr-4" @click="cancelUser">
+        <v-btn style="background: #F72222; color: white;" class="mr-4" @click="cancelUser">
           Cancel
         </v-btn>
         <v-btn

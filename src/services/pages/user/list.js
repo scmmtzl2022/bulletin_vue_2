@@ -53,10 +53,6 @@ export default {
             ],
             modal: false,
             modal2: false,
-            startDate: null,
-            endDate: null,
-            date: "",
-            date2: "",
             userList: [],
             showList: [],
             users: {
@@ -64,8 +60,7 @@ export default {
             },
             image: null,
             role: "",
-            keyword: null,
-            ekeyword: null,
+            keyword: "",
             noti: null,
         };
     },
@@ -103,8 +98,8 @@ export default {
                 this.$axios
                     .get("/user/list")
                     .then((response) => {
-                        this.postList = response.data;
-                        this.showList = this.postList;
+                        this.userList = response.data;
+                        this.showList = this.userList;
                     })
                     .catch((err) => {
                         console.log(err);
@@ -113,8 +108,8 @@ export default {
                 this.$axios
                     .post("/user/list/user", { id: this.$store.state.user.user.id })
                     .then((response) => {
-                        this.postList = response.data;
-                        this.showList = this.postList;
+                        this.userList = response.data;
+                        this.showList = this.userList;
                     })
                     .catch((err) => {
                         console.log(err);
@@ -124,8 +119,9 @@ export default {
             this.$axios
                 .get("/user/list")
                 .then((response) => {
-                    this.postList = response.data;
-                    this.showList = this.postList;
+                    this.userList = response.data;
+                    this.showList = this.userList;
+                    console.log(response)
                 })
                 .catch((err) => {
                     console.log(err);
@@ -191,20 +187,10 @@ export default {
          * @returns void
          */
         filtername() {
-            this.showList = this.userList.filter((user) => {
-                if (!this.keyword) {
+            this.showList = this.userList.filter((user) => {              
                     return (
-                        user.created_at >= this.startDate && user.created_at <= this.endDate
+                        user.name.includes(this.keyword)                       
                     );
-                } else {
-                    return (
-                        user.name.includes(this.keyword) &&
-                        user.email.includes(this.ekeyword) &&
-                        user.created_at >= this.startDate &&
-                        user.created_at <= this.endDate
-                    );
-                }
-
             });
         },
 

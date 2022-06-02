@@ -17,6 +17,12 @@
 .cross-btn {
     float: right;
 }
+.user-list-btn {
+    margin: auto;
+}
+.filter-bar {
+    margin-left: 20px;
+}
 
 .left {
     margin-top: 15px;

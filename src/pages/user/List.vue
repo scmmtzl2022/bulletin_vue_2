@@ -18,85 +18,19 @@
       <button class="cross-btn" @click="cancelAlert4">X</button>
     </v-alert>
     <v-card-title>
-      <v-spacer></v-spacer>
+      
       <v-form ref="form" @submit.prevent="filtername">
         <v-row class="filter-bar">
           <v-text-field
-            label="Name"
+            label="Enter a name to search"
             v-model="keyword"
             hide-details="auto"
             class="mr-5"
           >
           </v-text-field>
-
-          <v-text-field label="Email" v-model="ekeyword" hide-details="auto">
-          </v-text-field>
-
-          <div>
-            <v-dialog
-              ref="dialog"
-              v-model="modal"
-              :return-value.sync="date"
-              persistent
-              width="290px"
-            >
-              <template v-slot:activator="{ on, attrs }">
-                <v-text-field
-                  v-model="startDate"
-                  label="From"
-                  prepend-icon="mdi-calendar"
-                  readonly
-                  v-bind="attrs"
-                  v-on="on"
-                ></v-text-field>
-              </template>
-              <v-date-picker v-model="startDate" scrollable>
-                <v-spacer></v-spacer>
-                <v-btn text color="primary" @click="modal = false">
-                  Cancel
-                </v-btn>
-                <v-btn text color="primary" @click="$refs.dialog.save(date)">
-                  OK
-                </v-btn>
-              </v-date-picker>
-            </v-dialog>
-          </div>
-          <div>
-            <v-dialog
-              ref="dialog2"
-              v-model="modal2"
-              :return-value.sync="date2"
-              persistent
-              width="290px"
-            >
-              <template v-slot:activator="{ on, attrs }">
-                <v-text-field
-                  v-model="endDate"
-                  label="To"
-                  prepend-icon="mdi-calendar"
-                  readonly
-                  v-bind="attrs"
-                  v-on="on"
-                ></v-text-field>
-              </template>
-              <v-date-picker v-model="endDate" scrollable>
-                <v-spacer></v-spacer>
-                <v-btn
-                  text
-                  color="primary"
-                  @click="(modal2 = false), ($refs.dialog2.date2 = null)"
-                >
-                  Cancel
-                </v-btn>
-                <v-btn text color="primary" @click="$refs.dialog2.save(date2)">
-                  OK
-                </v-btn>
-              </v-date-picker>
-            </v-dialog>
-          </div>
           <v-btn
             type="submit"
-            class="post-list-btn mr-4"
+            class="user-list-btn mr-4"
             color="#459DB3"
             style="color: white"
             >Search</v-btn
