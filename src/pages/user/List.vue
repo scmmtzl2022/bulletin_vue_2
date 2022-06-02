@@ -31,7 +31,7 @@
           <v-btn
             type="submit"
             class="user-list-btn mr-4"
-            color="#459DB3"
+            color="#2E86C1"
             style="color: white"
             >Search</v-btn
           >

@@ -1,15 +1,19 @@
 <template>
     <div class="container">
-    <h1 class="header">Profile</h1>
-    
+    <div class="header">
+    <h3>Profile</h3>
+    </div>
       <v-card class="mx-auto px-14 py-8 card">
+        <v-btn color="#198754" class="btn-profile mr-4" style="color: white" @click="editProfile">
+          Edit Profile
+        </v-btn>
         <div>
           <img
               v-if="this.image"
               :src="this.image"
-              style="width: 250px"
+              style="height: 50px;"
           />
-        </div>
+        </div> 
         <v-text-field
         label="Name"
         :value="profileData.name"
@@ -47,13 +51,6 @@
         ></v-text-field>       
         
       </v-card>
-
-      <div class="btn">
-        <v-btn color="#198754" class="mr-4" style="color: white" @click="editProfile">
-          Edit Profile
-        </v-btn>
-        
-      </div>
   </div>
 </template>
 

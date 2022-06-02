@@ -112,9 +112,6 @@
         >
           Edit
         </v-btn>
-        <router-link :to="{ name: 'pwchange' }" class="link"
-              >Change Password</router-link
-            >
       </div>
     </v-form>
   </div>

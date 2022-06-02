@@ -12,7 +12,7 @@
 
             <v-toolbar-title class="toolbar">
               <router-link :to="{ name: 'list' }" class="link">
-                <span v-if="userType==0" class="title3">Users</span> 
+                <span v-if="userType == 0" class="title3">Users</span>
               </router-link>
               <router-link :to="{ name: 'post-list' }" class="link">
                 <span class="title3">Posts</span>
@@ -24,7 +24,7 @@
             <div class="route-links">
               <span v-if="isLoggedIn">
                 <router-link :to="{ name: 'create' }" class="link">
-                  <span v-if="userType==0" class="title2">Create User</span>
+                  <span v-if="userType == 0" class="title2">Create User</span>
                 </router-link>
               </span>
 
@@ -37,7 +37,15 @@
                 </template>
                 <v-list>
                   <v-list-item @click="showProfile()">
-                    <v-list-item-title>Profile</v-list-item-title>
+                    <v-list-item-title>Profile & Edit</v-list-item-title>
+                  </v-list-item>
+                  <v-list-item @click="ChangePassword()">
+                    <router-link
+                      :to="{ name: 'pwchange' }"
+                      class="link-changepassword"
+                      style="color: black"
+                      >Change Password</router-link
+                    >
                   </v-list-item>
                   <v-list-item @click="logout()">
                     <v-list-item-title>Logout</v-list-item-title>

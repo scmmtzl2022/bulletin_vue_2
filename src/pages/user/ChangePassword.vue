@@ -7,11 +7,7 @@
       @submit.prevent="updatePassword"
       lazy-validation
     >
-      <v-card class="mx-auto px-14 py-8 card">
-        <v-alert v-if="this.$store.state.pwnoti" type="error">
-          {{ this.$store.state.pwnoti }}
-          <button class="cross-btn" @click="cancelAlert">X</button>
-        </v-alert>
+      <v-card class="mx-auto px-14 py-8 card">        
         <v-text-field
           v-model="password.current"
           :counter="100"
